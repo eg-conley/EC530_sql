@@ -2,7 +2,7 @@
 import pandas as pd
 import sqlite3
 
-## STEP 1
+### STEP 1 ###
 # load and print rows of the csv dataframe
 df = pd.read_csv('test_3.csv')
 print(df.head()) # check rows of data frame
