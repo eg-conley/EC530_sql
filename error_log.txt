@@ -1,0 +1,26 @@
+2025-04-10 14:10:33,767:ERROR:Error during user prompt section: name 'create_table' is not defined
+2025-04-10 14:24:35,069:ERROR:Error during user prompt section: create_table_from_csv() missing 1 required positional argument: 'table_name'
+2025-04-10 14:26:01,531:ERROR:Error creating table 'users': name 'TABLE_NAME' is not defined
+2025-04-10 14:26:49,342:ERROR:Error creating table 'users': name 'TABLE_NAME' is not defined
+2025-04-10 14:27:39,877:ERROR:Error creating table 'users': name 'TABLE_NAME' is not defined
+2025-04-10 14:38:23,826:ERROR:Error creating table 'dogs': near ")": syntax error
+2025-04-10 14:39:31,258:ERROR:Error creating table 'dogs': near ")": syntax error
+2025-04-10 14:41:35,410:ERROR:Error creating table 'dogs': near ")": syntax error
+2025-04-10 15:16:06,167:ERROR:CLI error: 'str' object has no attribute 'execute'
+2025-04-10 15:24:37,510:ERROR:CLI error: name 'db_filename' is not defined
+2025-04-10 15:25:51,966:ERROR:SQL query failed: near ".": syntax error
+2025-04-10 15:27:15,010:ERROR:SQL query failed: near ".": syntax error
+2025-04-10 15:30:32,647:ERROR:SQL query failed: near ".": syntax error
+2025-04-10 15:30:34,689:ERROR:SQL query failed: near ".": syntax error
+2025-04-10 15:35:44,895:ERROR:CLI error: execute_query() missing 1 required positional argument: 'query'
+2025-04-10 15:44:54,637:ERROR:CLI error: execute_query() missing 1 required positional argument: 'query'
+2025-04-10 15:47:15,840:ERROR:SQL query failed: table users already exists
+2025-04-10 15:47:35,196:ERROR:SQL query failed: near "FROM": syntax error
+2025-04-10 15:47:49,016:ERROR:SQL query failed: near "FROM": syntax error
+2025-04-10 15:50:06,422:ERROR:SQL query failed: dictionary update sequence element #0 has length 5; 2 is required
+2025-04-10 15:50:17,165:ERROR:SQL query failed: dictionary update sequence element #0 has length 5; 2 is required
+2025-04-10 16:16:06,365:ERROR:Error fetching schema for table 'create': near "create": syntax error
+2025-04-10 16:17:22,478:ERROR:OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-10 16:19:24,394:ERROR:SQL query failed: near "TABLE": syntax error
+2025-04-10 16:20:32,774:ERROR:OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-10 16:30:03,919:ERROR:OpenAI API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
