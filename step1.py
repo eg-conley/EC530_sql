@@ -3,16 +3,19 @@ import pandas as pd
 import sqlite3
 
 ### STEP 1 ###
-# load and print rows of the csv dataframe
-df = pd.read_csv('test_3.csv')
-print(df.head()) # check rows of data frame
+# Objective: Understand the structure of CSV and how it maps to SQL tables
 
-# connect to sqlite3 and add users as a new table
-conn = sqlite3.connect('test_3.db') # connect to the sql database
-df.to_sql('users', conn, if_exists='replace', index=False)
-conn.close()
-
-# now in sqlite3 test_3.db, we can run QUERIES
+# in sqlite3 we can run QUERIES
 # Ex: SELECT * FROM users; will return all of the rows and columns
 # SELECT * FROM users LIMIT 1; will only return 1st row
 # SELECT * FROM users WHERE age = 20; will only return rows where age = 20
+
+# def create_table_from_csv(csv_filename, db_filename, table_name):
+#     # load and print rows of the csv dataframe
+#     df = pd.read_csv(csv_filename)
+#     print(df.head())
+#
+#     # connect to sqlite3 and add as a new table
+#     conn = sqlite3.connect(db_filename) # connect to the sql database
+#     df.to_sql(f'{table_name}', conn, if_exists='replace', index=False)
+#     conn.close()

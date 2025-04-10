@@ -1,3 +1,4 @@
-﻿username,email,age
-ellaconley,egconley@test.com,21
-janedoe,jd@test.com,20
+name,age,email
+Alice,22,alice@example.com
+Bob,30,bob@example.com
+Charlie,21,charlie@example.com
