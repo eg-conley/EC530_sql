@@ -13,9 +13,9 @@ from step4 import *
 
 
 ### STEP 1 ###
-CSV_FILENAME = 'test_3.csv'
-DB_FILENAME = 'test_3.db'
-TABLE_NAME = 'users'
+# CSV_FILENAME = 'test_3.csv'
+# DB_FILENAME = 'test_3.db'
+# TABLE_NAME = 'users'
 
 # Create a small sample CSV for testing
 # try:
@@ -98,8 +98,21 @@ TABLE_NAME = 'users'
 #     logging.error(f"Error during user prompt section: {e}")
 
 ### STEP 4 ###
+# try:
+#     df = pd.read_csv(CSV_FILENAME)
+#     with sqlite3.connect(DB_FILENAME) as conn:
+#         cursor = conn.cursor()
+#         interactive_cli(cursor, DB_FILENAME)
+# except Exception as e:
+#     print(f'Error: {e}')
+
+
+### STEP 5 ###
+# Run Step 5: Incorporate the LLM in the CLI and can specicially ask user for what database they want to work on
+CSV_FILENAME = 'default.csv'
+TABLE_NAME = 'default'
+DB_FILENAME = input('Enter a database file name <name>.db: ')
 try:
-    df = pd.read_csv(CSV_FILENAME)
     with sqlite3.connect(DB_FILENAME) as conn:
         cursor = conn.cursor()
         interactive_cli(cursor, DB_FILENAME)

@@ -1,6 +1,7 @@
 ## EC530 SQL LLM Hackathon
 import logging
 from step3 import *
+from step5 import *
 
 ### STEP 4 ###
 # Objective: Create a simple, interactive assistant using Python CLI
@@ -65,7 +66,39 @@ def interactive_cli(cursor, db_filename):
 
             ## have yet to implement the LLM
             elif command == "ask":
-                return None
+                if len(parts) < 2:
+                    print("Please specify a table and question. Usage: ask <table_name> <question>")
+                    continue
+                ask_parts = parts[1].split(maxsplit=1)
+                if len(ask_parts) < 2:
+                    print("Please specify both table name and question.")
+                    continue
+
+                table_name = ask_parts[0]
+                question = ask_parts[1]
+                schema = get_schema(cursor, table_name)
+                if not schema:
+                    print(f"Schema for table '{table_name}' not found.")
+                    continue
+                print("\nGenerating SQL for your question")
+                generated_query = generate_sql_from_llm(table_name, question, schema)
+
+                if generated_query:
+                    print(f"\nGenerated query:\n{generated_query}")
+
+                    confirm = input("Execute this query? [Y/N] ").strip().lower()
+                    if confirm == 'y':
+                        results = execute_query(cursor, generated_query)
+                        if results is not None:
+                            if not results:
+                                print("Query executed successfully but returned no results.")
+                            else:
+                                print("\nQuery results:")
+                                print(results)
+                    else:
+                        print("Query not executed.")
+                else:
+                    print("Failed to generate SQL for your question.")
 
             elif command == "tables":
                 tables = list_tables(cursor)
