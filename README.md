@@ -2,9 +2,13 @@
 
 ## Table of Contents
  1. [Overview](#overview)
- 2. [File Structure](#file-structure)
- 3. [How to Use](#how-to-use)
- 4. [Future Improvements](#future-improvements)
+ 2. [API](#api)
+ 3. [Features](#features)
+ 4. [Command Options](#command-options)
+ 5. [File Structure](#file-structure)
+ 6. [How to Use](#how-to-use)
+ 7. [Future Improvements](#future-improvements)
+ 8. [Acknowledgements and License](#acknowledgements)
 
 ## Overview
 This application allows users to create and manage SQLite Databases through a CLI. Users can choose from a variety of features including asking a chat bot (through OpenAI's API) a question related to databases.
