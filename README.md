@@ -13,7 +13,10 @@ This application allows users to create and manage SQLite Databases through a CL
 https://github.com/openai/openai-python
 
 ## Features
-
+* Automated SQL table creation from CSV file
+* Variety of inout validation: Testing for existing tables, schema validation
+* Simple, interactive, user-friendly CLI
+* LLM integration allowing for simple plain language prompts
 
 ## Command Options
  1. load <csv_path> [table_name]: Load CSV into the database initally specified
