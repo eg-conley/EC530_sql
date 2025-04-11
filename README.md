@@ -65,6 +65,7 @@ EC530_sql/ \
 > <img width="564" alt="Screenshot 2025-04-11 at 6 01 32 PM" src="https://github.com/user-attachments/assets/71b84ca0-7fdb-4b76-8d1f-7055684b74a9" /> \
 > <img width="227" alt="Screenshot 2025-04-11 at 6 02 51 PM" src="https://github.com/user-attachments/assets/95b87427-31b6-4c5a-98eb-17104a090341" />
 * Enter any plain language request and get a SQL command with `ask [your_prompt]`
+> <img width="347" alt="Screenshot 2025-04-11 at 6 34 56 PM" src="https://github.com/user-attachments/assets/d7d62175-932d-438f-94bb-1ae210e915d9" />
 * List all of the current tables in the database with `tables`
 > <img width="201" alt="Screenshot 2025-04-11 at 5 57 47 PM" src="https://github.com/user-attachments/assets/27c962e3-213e-413d-9113-2d2a4b49a2e2" />
 * Get the schema of a specific table in the database with `schema <table_name>`
