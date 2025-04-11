@@ -26,6 +26,7 @@ https://github.com/openai/openai-python
 
 ## File Structure
 EC530_sql/ \
+|-- error_log.txt # \
 |-- main.py # \
 |-- step1.py # \
 |-- step2.py # \
